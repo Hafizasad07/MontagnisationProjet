@@ -100,9 +100,11 @@ header h1 {
 }
 .overtourism .top-content button {
     margin-top: 90px;
+    position: absolute;
+    z-index: 100;
 }
 .overtourism .bottom-content {
-    margin-top: 80px;
+    margin-top: 200px;
     position: relative;
     z-index: 12;
     margin-bottom: 40px;
@@ -117,9 +119,9 @@ header h1 {
     background-size: cover;
     width: calc(100% + 126px);
     left: -126px;
-    top: -280px;
+    top: -300px;
     opacity: 0.7;
-    height: 1360px;
+    height: 1375px;
 }
 .news {
     width: 100%;
@@ -290,3 +292,15 @@ a{
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
     color: #ffffff;
 }
+
+.nav-item.dropdown:hover .dropdown-menu {
+    display: block;
+  }
+
+  .nav-item.dropdown .dropdown-toggle::after {
+    content: none;
+  }
+
+  .navbar-nav .dropdown-menu{
+    width: 100% !important;
+  }
