@@ -1,12 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Lato', sans-serif;
+    font-family: "Lato", sans-serif;
 }
 
 body {
-    /* background-color: #1A1A1A; */
     color: #FFFFFF;
 }
 
@@ -29,13 +29,43 @@ header h1 {
 }
 .nav-link {
     color: #fff;
+    position: relative;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+    font-weight: 500;
 }
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 0%;
+    height: 3px;
+    background: #265379; 
+    transition: width 0.3s ease-in-out;
+}
+
 .nav-link:hover {
-    color: #fff;
+    color: #265379;
 }
 
+.navbar-nav img{
+    width: 100px;
+}
 
+.nav-link:hover::after {
+    width: 100%;
+}
 
+.dropdown-menu {
+    border-radius: 0;
+    border: none;
+}
+.dropdown-toggle::after{
+    border-right: none !important;
+    border-left: none !important;
+}
 .hero-section .bottom-content .main-center-text .btn,
 .overtourism button,
 .news button {
