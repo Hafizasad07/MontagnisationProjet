@@ -11,7 +11,7 @@ body {
 }
 
 header {
-    background-color: #ce9259;
+    background-color: #BE9762;
     text-align: center;
      color: #ffffff !important;
 }
@@ -189,13 +189,17 @@ footer p {
     min-height: 420px;
 }
 
-.hero-section .hero-section-img img{
+.hero-section .hero-section-img{
     border: 3px solid black;
     border-radius: 150%;
     padding: 38px 15px;
-    width: 200px;
+    margin: auto;
+    max-width: 200px;
 }
 
+.hero-section .hero-section-img img{
+    max-width: 150px;
+}
 .hero-section h1{
     color: #000;
     padding-top: 70px;
@@ -264,7 +268,7 @@ footer p {
     
 
 .contact-link{
-    background: #ce9259;
+    background: #BE9762;
     padding: 10px;
     text-decoration: none;
     align-items: center;
@@ -277,4 +281,12 @@ footer{
 
 a{
     text-decoration: none;
+}
+
+.btn:hover,
+.button a:hover {
+    background-color: #e0a800 !important; 
+    transform: scale(1.05); 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
+    color: #ffffff;
 }
